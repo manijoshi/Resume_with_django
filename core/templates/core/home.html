@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content%}
+<div class="mt-5">
+    <div class=" text-center">
+        <img class="image-fluid rounded-circle" src="{% static 'core/images/img.jpeg'%}" alt="ProfilePic" class="img-thumbnail " width="190px" height="200px">
+    </div>
+    <div class="text-white mx-5 text-justify">
+        <h1 class="font-weight-bold mt-5 font">Hello, </h1>
+    <div class="px-4" style="line-height: 2rem;">
+        <p style="text-indent: 100px;" class="text-white font">
+            I am <b class=text-warning>Manisha Joshi</b>
+            I am an undergraduate of B.Tech., currently pursuing a major in Information Technology from ABES Engineering College, Ghaziabad, India. I like solving problems based on Data Structures, Algorithms and Mathematics. I participate in platforms like Codechef, Codeforces. I love developing Web Applications. I am decently sound in tools such as HTML, CSS, Bootstrap, PHP and a bit of JavaScript.
+        </p>
+    </div>
+    </div>
+    <div class=text-center>
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 font" style="margin-right: 50px;">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 font">Contact</a>
+    </div>
+</div>
+{% endblock content%}
